@@ -2,6 +2,13 @@
 
 ## This is a response to the challenge posted [here](https://simpleelectronics.ca/a-challenge-to-the-viewer-max30102/).
 
+## Hardware
+- Pi Pico powered by USB
+- SSD1306 display 3V3
+- MAX30102 3V3
+  - Only the SCL and SDA pins were used on the MAX
+  - The I2C lines were NOT pulled high externally
+    - Note: the SSD1306 has internal pullups on the I2C lines so that may have helped.
 
 ## This example is a modification of the Example8_SPO2.ino file
 
