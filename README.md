@@ -41,3 +41,6 @@ lib_deps=
 - A single Wire (I2C) interface was used for both the SSD1306 display and the MAX30102 module. There didn't seem to be a conflict between the two.
 - The original challenge code that was provided was attempting to trigger on the INT^ signal from the module.  I connected my scope to that pin and it seemed to be pinned low (active) at least on my module.  That seemed to keep it from triggering since it never saw the falling edge.  Because of this I opted to go with the polling Example8_SPO2 code.
 - Since the output is a rolling average, you need to keep your finger on the sensor for a while (30 seconds or so) before the readings will stabilize.
+
+## Running configuration.  
+![MAX30102 - SSD1306 - Pi Pico](max30102.png)
